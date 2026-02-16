@@ -7,13 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap' );
         body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
-
     <!-- Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,126 +21,142 @@
                     <span class="text-2xl font-bold text-blue-900">Dental<span class="text-blue-600">Compli</span></span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-slate-600 hover:text-blue-600">Features</a>
-                    <a href="#pricing" class="text-slate-600 hover:text-blue-600">Pricing</a>
-                    <a href="#contact" class="text-slate-600 hover:text-blue-600">Contact</a>
+                    <a href="#features" class="text-slate-600 hover:text-blue-600 font-medium">Features</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-blue-600 font-medium">Pricing</a>
+                    <a href="#contact" class="text-slate-600 hover:text-blue-600 font-medium">Contact</a>
                 </div>
-                <div>
-                    <a href="#pricing" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">Get Started</a>
-                </div>
+                <a href="#pricing" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Get Started</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="gradient-bg text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">CQC 2026 Ready in Minutes</h1>
-            <p class="text-xl md:text-2xl mb-10 text-blue-100 max-w-3xl mx-auto">Complete compliance solution for UK dental practices. Professional documents, AI consent forms, and data security policies—all ready to download.</p>
+    <header class="hero-gradient text-white py-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">CQC 2026 Ready in Minutes</h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">Complete compliance solution for UK dental practices. Professional documents, AI consent forms, and data security policies—all ready to download.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#pricing" class="bg-white text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition">View Pricing</a>
-                <a href="#features" class="bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-900 transition">Learn More</a>
+                <a href="#pricing" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition shadow-lg">View Pricing</a>
+                <a href="#features" class="bg-blue-700 text-white border border-blue-400 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 transition">Learn More</a>
             </div>
-            <p class="mt-6 text-blue-200 flex items-center justify-center gap-2">
+            <p class="mt-8 text-blue-200 flex items-center justify-center gap-2">
                 <i class="fas fa-check-circle"></i> Trusted by 400+ UK Practices
             </p>
         </div>
     </header>
 
+    <!-- Video Section -->
+    <section class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">See How DentalCompli Works</h2>
+            <p class="text-slate-600 mb-10 max-w-2xl mx-auto">Watch our quick overview to see how we help your practice stay ahead of the new CQC 2026 digital and AI regulations.</p>
+            <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-slate-200">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GVLsux7wT60?si=aK0IxI-qUrvWRe08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section id="features" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="features" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Everything You Need for CQC 2026</h2>
-                <p class="text-slate-600 mt-4">Don't let new digital and AI regulations catch you off guard.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Everything You Need for CQC 2026</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Don't let new digital and AI regulations catch you off guard. We've done the heavy lifting for you.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                     <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-file-signature text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">AI Consent Forms</h3>
-                    <p class="text-slate-600">Professionally drafted patient consent forms specifically for AI and digital data usage in dentistry.</p>
+                    <p class="text-slate-600 leading-relaxed">Professionally drafted patient consent forms specifically for AI and digital data usage in dentistry.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                     <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-shield-alt text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Data Security Policies</h3>
-                    <p class="text-slate-600">Comprehensive staff policies ensuring your practice meets the latest UK data protection standards.</p>
+                    <p class="text-slate-600 leading-relaxed">Comprehensive staff policies ensuring your practice meets the latest UK data protection standards.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                     <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-tasks text-xl"></i>
+                        <i class="fas fa-list-check text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">10-Min Checklist</h3>
-                    <p class="text-slate-600">A rapid self-audit tool to identify compliance gaps in your practice within minutes.</p>
+                    <p class="text-slate-600 leading-relaxed">A rapid self-audit tool to identify compliance gaps in your practice within minutes.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-20 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pricing" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Simple, Transparent Pricing</h2>
-                <p class="text-slate-600 mt-4">Choose the package that fits your practice size.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-slate-600">Choose the package that fits your practice size.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Essential Pack -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200 flex flex-col">
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Essential -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 flex flex-col">
                     <h3 class="text-xl font-bold mb-2">Essential Pack</h3>
-                    <div class="text-4xl font-bold mb-6">£49</div>
+                    <div class="text-4xl font-extrabold mb-6">£49</div>
                     <ul class="space-y-4 mb-8 flex-grow">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> CQC-aligned documents</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> AI Consent Forms</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> 10-Minute Checklist</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Instant Download</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> CQC-aligned documents</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> AI Consent Forms</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> 10-Minute Checklist</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> Instant Download</li>
                     </ul>
-                    <a href="https://www.paypal.com/ncp/payment/K29KV4LQX2A3L" class="block text-center bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">Get Essential Pack</a>
+                    <a href="https://www.paypal.com/ncp/payment/K29KV4LQX2A3L" class="block text-center bg-slate-900 text-white py-3 rounded-lg font-bold hover:bg-slate-800 transition">Get Essential Pack</a>
                 </div>
-
-                <!-- Professional Pack -->
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-blue-500 flex flex-col relative transform scale-105">
-                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-bold">MOST POPULAR</div>
+                <!-- Professional -->
+                <div class="bg-white p-8 rounded-2xl border-2 border-blue-600 shadow-xl flex flex-col relative transform scale-105">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">Most Popular</div>
                     <h3 class="text-xl font-bold mb-2">Professional Pack</h3>
-                    <div class="text-4xl font-bold mb-6">£149</div>
+                    <div class="text-4xl font-extrabold mb-6">£149</div>
                     <ul class="space-y-4 mb-8 flex-grow">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Everything in Essential</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> 30-Min Consultation Call</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> 57 Email Templates</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> 90-Day Support</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-blue-600"></i> Everything in Essential</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-blue-600"></i> 30-Min Consultation Call</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-blue-600"></i> 57 Email Templates</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-blue-600"></i> 90-Day Support</li>
                     </ul>
                     <a href="https://www.paypal.com/ncp/payment/ZEEYWGHC595LJ" class="block text-center bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">Get Professional Pack</a>
                 </div>
-
-                <!-- Premium Pack -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200 flex flex-col">
+                <!-- Premium -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 flex flex-col">
                     <h3 class="text-xl font-bold mb-2">Premium Pack</h3>
-                    <div class="text-4xl font-bold mb-6">£299</div>
+                    <div class="text-4xl font-extrabold mb-6">£299</div>
                     <ul class="space-y-4 mb-8 flex-grow">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Everything in Professional</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Unlimited Consultations</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Custom Policy Development</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Staff Training Session</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> Everything in Professional</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> Unlimited Consultations</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> Custom Policy Development</li>
+                        <li class="flex items-center gap-3 text-slate-600"><i class="fas fa-check text-green-500"></i> Staff Training Session</li>
                     </ul>
-                    <a href="https://www.paypal.com/ncp/payment/4TY7RLWX2AKF6" class="block text-center bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">Get Premium Pack</a>
+                    <a href="https://www.paypal.com/ncp/payment/4TY7RLWX2AKF6" class="block text-center bg-slate-900 text-white py-3 rounded-lg font-bold hover:bg-slate-800 transition">Get Premium Pack</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="text-2xl font-bold text-white mb-4">Dental<span class="text-blue-400">Compli</span></div>
-            <p class="mb-8">Helping UK dental practices navigate CQC 2026 with confidence.</p>
-            <div class="border-t border-slate-800 pt-8">
-                <p>&copy; 2026 DentalCompli. All rights reserved.</p>
+    <footer id="contact" class="bg-slate-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <span class="text-2xl font-bold mb-6 block">Dental<span class="text-blue-400">Compli</span></span>
+                <p class="text-slate-400 max-w-md">Empowering UK dental practices to embrace digital innovation with confidence and full compliance.</p>
+            </div>
+            <div class="text-right">
+                <h4 class="font-bold mb-4">Contact Support</h4>
+                <p class="text-slate-400">support@dentalcompli.com</p>
+                <div class="mt-6 flex justify-end space-x-4">
+                    <a href="#" class="text-slate-400 hover:text-white transition text-xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition text-xl"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
+        <div class="max-w-7xl mx-auto border-t border-slate-800 mt-12 pt-8 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 DentalCompli. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>
