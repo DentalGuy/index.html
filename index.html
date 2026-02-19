@@ -10,117 +10,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap' );
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
-        
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            animation: fadeIn 0.3s ease-in;
-        }
-        
-        .modal.show {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .modal-content {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
-            width: 90%;
-            animation: slideUp 0.3s ease-out;
-            max-height: 90vh;
-            overflow-y: auto;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideUp {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        
-        .close-btn {
-            float: right;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #6b7280;
-            transition: color 0.2s;
-        }
-        
-        .close-btn:hover {
-            color: #1f2937;
-        }
-
-        /* Form Styles */
-        .form-group {
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #1f2937;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            font-family: inherit;
-            font-size: 1rem;
-            box-sizing: border-box;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #2563eb;
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 0.75rem;
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            border-radius: 0.5rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .submit-btn:hover {
-            background-color: #1d4ed8;
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -272,7 +161,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Dental Accounting</h3>
                     <p class="text-slate-600 mb-6">Expert tax and financial planning specialists for dental practices.</p>
-                    <button onclick="openPartnerModal('Dental Accounting', 'Expert tax and financial planning specialists for dental practices.')" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition cursor-pointer border-0">Learn More</button>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Learn More</a>
                 </div>
 
                 <!-- Partner 2: Insurance -->
@@ -282,7 +171,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Indemnity Insurance</h3>
                     <p class="text-slate-600 mb-6">Comprehensive coverage and risk management for your practice.</p>
-                    <button onclick="openPartnerModal('Indemnity Insurance', 'Comprehensive coverage and risk management for your practice.')" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition cursor-pointer border-0">Learn More</button>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Learn More</a>
                 </div>
 
                 <!-- Partner 3: Recruitment -->
@@ -292,14 +181,14 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Specialist Recruitment</h3>
                     <p class="text-slate-600 mb-6">Find and hire the best dental professionals for your team.</p>
-                    <button onclick="openPartnerModal('Specialist Recruitment', 'Find and hire the best dental professionals for your team.')" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition cursor-pointer border-0">Learn More</button>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Learn More</a>
                 </div>
             </div>
 
             <div class="mt-16 text-center bg-blue-50 border border-blue-200 rounded-xl p-8 max-w-2xl mx-auto">
                 <h3 class="text-xl font-bold text-slate-900 mb-2">Want to Partner with DentalCompli?</h3>
                 <p class="text-slate-600 mb-6">We're always looking for high-quality services to recommend to our network of dental practices.</p>
-                <button onclick="openPartnerModal('Partnership Inquiry', 'Become part of the DentalCompli Trusted Network')" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition cursor-pointer border-0">Get in Touch</button>
+                <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Get in Touch</a>
             </div>
         </div>
     </section>
@@ -320,85 +209,5 @@
             <p>&copy; 2026 DentalCompli. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Partner Modal -->
-    <div id="partnerModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closePartnerModal()">&times;</span>
-            <h2 class="text-2xl font-bold text-slate-900 mb-4" id="modalTitle">Partner Name</h2>
-            <p class="text-slate-600 mb-6" id="modalDescription">Partner description goes here.</p>
-            
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-                <h3 class="font-bold text-slate-900 mb-2">Partnership Details</h3>
-                <p class="text-slate-600 text-sm mb-3"><strong>Cost:</strong> £15 per month</p>
-                <p class="text-slate-600 text-sm mb-3"><strong>What You Get:</strong></p>
-                <ul class="text-slate-600 text-sm space-y-2 ml-4">
-                    <li>• Featured listing on DentalCompli website</li>
-                    <li>• Direct referrals to our audit clients</li>
-                    <li>• Inclusion in our partner newsletters</li>
-                    <li>• Logo displayed prominently</li>
-                </ul>
-            </div>
-            
-            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
-                <h3 class="font-bold text-slate-900 mb-2">Logo Requirements</h3>
-                <ul class="text-slate-600 text-sm space-y-2">
-                    <li>• <strong>Format:</strong> PNG or JPG</li>
-                    <li>• <strong>Dimensions:</strong> 300x300 to 600x600 pixels (square preferred)</li>
-                    <li>• <strong>Resolution:</strong> 72 DPI or higher</li>
-                    <li>• <strong>File Size:</strong> Under 500 KB</li>
-                </ul>
-            </div>
-            
-            <!-- Partner Inquiry Form with Web3Forms -->
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="607aae58-2a17-4673-97ce-4dd48daed2c1">
-                <input type="hidden" name="subject" value="DentalCompli Partnership Inquiry">
-                <input type="hidden" name="from_name" value="DentalCompli Website">
-                
-                <div class="form-group">
-                    <label for="partner_name">Your Name</label>
-                    <input type="text" id="partner_name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="partner_email">Your Email</label>
-                    <input type="email" id="partner_email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="partner_company">Company Name</label>
-                    <input type="text" id="partner_company" name="company" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="partner_message">Tell us about your business</label>
-                    <textarea id="partner_message" name="message" required></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Send Partnership Inquiry</button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        function openPartnerModal(partnerName, description) {
-            document.getElementById('modalTitle').textContent = partnerName;
-            document.getElementById('modalDescription').textContent = description;
-            document.getElementById('partnerModal').classList.add('show');
-        }
-        
-        function closePartnerModal() {
-            document.getElementById('partnerModal').classList.remove('show');
-        }
-        
-        // Close modal when clicking outside of it
-        window.onclick = function(event) {
-            const modal = document.getElementById('partnerModal');
-            if (event.target == modal) {
-                modal.classList.remove('show');
-            }
-        }
-    </script>
 </body>
 </html>
